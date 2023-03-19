@@ -53,7 +53,7 @@ def new_topic(request):
 
 @login_required
 def new_entry(request, topic_id):
-    """Add a n ew entry for a particular topic."""
+    """Add a new entry for a particular topic."""
     topic = get_object_or_404(Topic, id=topic_id)
 
     if request.method != 'POST':
