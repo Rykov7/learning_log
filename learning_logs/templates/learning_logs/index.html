@@ -6,10 +6,28 @@
 
         <p class="lead">
             Создай свой собственный учебный журнал и веди список изучаемых тем.
-            Что бы ты ни изучал нового по теме, делай записи, подводя итоги изученного.
+            Что бы ты ни изучал, создавай новую тему, делай записи, подводя итоги изученного.
         </p>
 
         <a class="btn btn-lg btn-primary" href="{% url 'users:register' %}"
             role="button">Регистрация &raquo;</a>
     </div>
+
+
 {% endblock page_header %}
+            {% block content %}
+    <div>
+        <h2 class="display-4">
+
+        </h2>
+    <p class="lead">
+            <em>Learning Log</em> — учебный веб-проект по книге Eric Matthes <strong>"Python Crash Course"</strong>, 2nd Edition (2019).
+        Представляет собой учебный журнал, разработанный с использованием фреймворка Django. Зарегистрированные пользователи могут создавать свои темы и
+        добавлять к ним записи.
+        <ul class="lead">
+        <li><a href="https://github.com/Rykov7/learning_log">Репозиторий данной версии Learning Log</a></li>
+        <li><a href="https://github.com/Rykov7/Invasion">Репозиторий Alien Invasion (проекта на PyGame из этой же книги)</a> </li>
+    </ul>
+
+    </p>
+    </div>{% endblock content %}

@@ -1,0 +1,6 @@
+services:
+  web:
+    build: .
+    command: gunicorn --bind unix:/run/ll.sock learning_log.wsgi:application
+    volumes:
+      - .:/code

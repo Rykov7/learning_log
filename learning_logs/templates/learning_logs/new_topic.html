@@ -2,7 +2,7 @@
 {% load bootstrap4 %}
 
 {% block page_header %}
-    <h3>Add a new topic:</h3>
+    <h3>Добавить новую тему:</h3>
 {% endblock page_header %}
 
 
@@ -13,7 +13,7 @@
     {% csrf_token %}
     {% bootstrap_form form %}
     {% buttons %}
-    <button name='submit' class="btn btn-primary">Add topic</button>
+    <button name='submit' class="btn btn-primary">Добавить тему</button>
     {% endbuttons %}
 </form>
 {% endblock content %}
